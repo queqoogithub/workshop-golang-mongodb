@@ -40,7 +40,7 @@
 &nbsp;<br />
 &nbsp;
 
-🌟 <h3>MVC</h3>
+## MVC
 
 * MVC stands for Model-View-Controller, it is a design pattern that separates the logic of a software application into three interconnected components: the Model, the View, and the Controller.
 
