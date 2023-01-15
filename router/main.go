@@ -11,6 +11,12 @@ func GetRoute(r *gin.Engine) {
 	r.POST("/employee/detail", ctl.GetEmployeeCtl)
 	r.POST("/employee/details", ctl.GetEmployeesCtl)
 	r.DELETE("/employee/delete", ctl.DeleteEmployeeCtl)
+
+	r.PUT("/company/insert", ctl.InsertCompanyCtl)
+	r.PUT("/company/update", ctl.UpdateCompanyCtl)
+	r.POST("/company/detail", ctl.GetCompanyCtl)
+	r.POST("/company/details", ctl.GetCompaniesCtl)
+	r.DELETE("/company/delete", ctl.DeleteCompanyCtl)
 }
 
 func CORSMiddleware() gin.HandlerFunc {
