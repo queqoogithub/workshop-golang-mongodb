@@ -35,11 +35,11 @@
   - เพิ่มเส้น Company Profile โดยทำแบบ CRUD
   - กำหนดเส้น middleware ส่วน insert/update ให้ทำการเช็ค http header X-Api-Key โดยค่าจะต้องเท่ากับ my-gosoft-password ถ้าไม่ใช่ค่าตัวนี้ ให้ส่งข้อความมาบอกว่า invalid API Key พร้อมทั้ง http status 401
   - กำหนดให้ค่าที่เก็บ company profile ดังนี้
+  - {companyId: "109",companyName: "Gosoft",employeeAmt: 100,companyStatus: 1}
   <br />
-  {companyId: "109",companyName: "Gosoft",employeeAmt: 100,companyStatus: 1}
 &nbsp;<br />
 &nbsp;
-# MVC
+# **MVC**
 MVC stands for Model-View-Controller, it is a design pattern that separates the logic of a software application into three interconnected components: the Model, the View, and the Controller.
 
 * The Model represents the data and the business logic of the application. It is responsible for handling and manipulating the data, and it communicates with the database.

@@ -3,6 +3,7 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	ctl "gosoft.co.th/workshop-api/controller"
+	"gosoft.co.th/workshop-api/middleware"
 )
 
 func GetRoute(r *gin.Engine) {
@@ -12,8 +13,8 @@ func GetRoute(r *gin.Engine) {
 	r.POST("/employee/details", ctl.GetEmployeesCtl)
 	r.DELETE("/employee/delete", ctl.DeleteEmployeeCtl)
 
-	r.PUT("/company/insert", ctl.InsertCompanyCtl)
-	r.PUT("/company/update", ctl.UpdateCompanyCtl)
+	r.PUT("/company/insert", middleware.CheckAuthorization, ctl.InsertCompanyCtl)
+	r.PUT("/company/update", middleware.CheckAuthorization, ctl.UpdateCompanyCtl)
 	r.POST("/company/detail", ctl.GetCompanyCtl)
 	r.POST("/company/details", ctl.GetCompaniesCtl)
 	r.DELETE("/company/delete", ctl.DeleteCompanyCtl)
