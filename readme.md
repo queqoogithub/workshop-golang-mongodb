@@ -40,7 +40,8 @@
 &nbsp;<br />
 &nbsp;
 # **MVC**
-MVC stands for Model-View-Controller, it is a design pattern that separates the logic of a software application into three interconnected components: the Model, the View, and the Controller.
+
+* MVC stands for Model-View-Controller, it is a design pattern that separates the logic of a software application into three interconnected components: the Model, the View, and the Controller.
 
 * The Model represents the data and the business logic of the application. It is responsible for handling and manipulating the data, and it communicates with the database.
 
@@ -48,4 +49,4 @@ MVC stands for Model-View-Controller, it is a design pattern that separates the 
 
 * The Controller is responsible for handling the user's actions and requests. It receives user input from the View and communicates with the Model to update the data or retrieve information.
 
-The three components are connected and interact with each other, but they have separate responsibilities and can be developed and tested independently. This separation of concerns allows for more maintainable and scalable code.
+* The three components are connected and interact with each other, but they have separate responsibilities and can be developed and tested independently. This separation of concerns allows for more maintainable and scalable code.
